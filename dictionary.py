@@ -38,3 +38,55 @@ def choose_item():
 
 choose_item() """
 
+store = [
+{
+    "name": "Apple",
+    "price": "$4.99",
+    "type": "food"
+},
+{
+    "name": "Banana",
+    "price": "$5.50",
+    "type": "food"
+},
+{
+    "name": "Cereal",
+    "price": "$11.79",
+    "type": "food"
+},
+{
+    "name": "Car_toy",
+    "price": "$5.69",
+    "type": "toy"
+},
+{
+    "name": "Nerf_gun",
+    "price": "$19.99",
+    "type": "toy"
+},
+]
+
+print("What would you like to buy?")
+
+def show_items(items):
+    for index, item in enumerate(items):
+        print(index, ":", item["name"])
+
+show_items(store)
+
+
+y = input("")
+
+
+
+
+
+"""     for stores in store:
+        print(stores['name'], stores['price']) """
+
+
+
+
+"""     "name": "",
+    "price": "",
+    "type": "" """
