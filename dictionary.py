@@ -66,19 +66,20 @@ store = [
     "type": ": toy"
 },
 ]
-while True:
-    exit = False
-    print("What would you like to buy?")
-    
-    def show_items(items):
+
+""" def show_items(items):
         for index, item in enumerate(items):
             print(index, ":", item["name"])
     
-    show_items(store)
+show_items(store)
+
+while True:
+    print("What would you like to buy?")
 
     y = int(input(""))
     if int(y) == "0":
         print(store[0]['name'], store[0]['price'], store[0]['type'])
+        
     elif int(y) == "1":
         print(store[1]['name'], store[1]['price'], store[1]['type'])
     elif int(y) == "2":
@@ -87,17 +88,12 @@ while True:
         print(store[3]['name'], store[3]['price'], store[3]['type'])
     elif int(y) == "4":
         print(store[4]['name'], store[4]['price'], store[4]['type'])
-    if int(y) == "exit":
-        exit = True
-        break
-    if exit:
-        break
 
 
 
 
 
-
+ """
 
 
 
