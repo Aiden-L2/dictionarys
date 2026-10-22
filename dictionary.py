@@ -133,7 +133,7 @@ def slot_machine(q,slot_1,slot_2,slot_3):
         if q == 0:
             print("Martha plays", str(plays), "before going broke")
             break
-slot_machine(0,3,10,4)
+slot_machine(2,3,10,4)
 
 """     plays = 0
     q = 48
