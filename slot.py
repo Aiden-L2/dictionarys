@@ -27,5 +27,4 @@ def slot_machine(q,slot_1,slot_2,slot_3):
         if q == 0:
             print("Martha plays", str(plays), "before going broke")
             break
-print(slot_machine(48,3,10,4))
 
