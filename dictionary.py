@@ -73,16 +73,33 @@ def show_items(items):
     
 show_items(store)
 
+shopping_cart = []
+
+
 while True:
-    
-    shopping_cart = y
-    for shopping_cart in range:
-         print(store[y]['name'], store[y]['price'])
-    y = input("What would you like to buy")
+
+    y = shopping_cart
+    if y == 0:
+        for items in shopping_cart:
+            print("shopping cart:")
+            print(store[0]['name'], store[0]['price'])
+    y = input("Choose an item number or quit:")
+    print("type shop to see your cart")
     if y == "quit":
          break
+    if y == "shop":
+         print(shopping_cart)
     if y == "0":
-        print(store[0]['name'], store[0]['price'], store[0]['product'])  
+        print(store[0]['name'], store[0]['price'], store[0]['product']) 
+        z = input("would you like to buy this item")
+        if z == "yes":
+             shopping_cart.append(store[0]['name'])
+             shopping_cart.append(store[0]['price'])
+             print("item added to cart")
+    if y == "remove":
+        print(shopping_cart) 
+        print("what do you want to remove from your list")
+
 
 
 
