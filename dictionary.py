@@ -43,57 +43,66 @@ store = [
 {
     "name": "Apple",
     "price": "$4.99",
-    "type": ": food"
+    "product": ": food"
 },
 {
     "name": "Banana",
     "price": "$5.50",
-    "type": ": food"
+    "product": ": food"
 },
 {
     "name": "Cereal",
     "price": "$11.79",
-    "type": ": food"
+    "product": ": food"
 },
 {
     "name": "Car_toy",
     "price": "$5.69",
-    "type": ": toy"
+    "product": ": toy"
 },
 {
     "name": "Nerf_gun",
     "price": "$19.99",
-    "type": ": toy"
+    "product": ": toy"
 },
 ]
 
-""" def show_items(items):
+def show_items(items):
         for index, item in enumerate(items):
             print(index, ":", item["name"])
     
 show_items(store)
 
 while True:
-    print("What would you like to buy?")
-
-    y = int(input(""))
-    if int(y) == "0":
-        print(store[0]['name'], store[0]['price'], store[0]['type'])
-        
-    elif int(y) == "1":
-        print(store[1]['name'], store[1]['price'], store[1]['type'])
-    elif int(y) == "2":
-        print(store[2]['name'], store[2]['price'], store[2]['type'])
-    elif int(y) == "3":
-        print(store[3]['name'], store[3]['price'], store[3]['type'])
-    elif int(y) == "4":
-        print(store[4]['name'], store[4]['price'], store[4]['type'])
+    
+    shopping_cart = y
+    for shopping_cart in range:
+         print(store[y]['name'], store[y]['price'])
+    y = input("What would you like to buy")
+    if y == "quit":
+         break
+    if y == "0":
+        print(store[0]['name'], store[0]['price'], store[0]['product'])  
 
 
 
 
 
- """
+
+"""     elif y == "1":
+        print(store[1]['name'], store[1]['price'], store[1]['product'])
+    elif y == "2":
+        print(store[2]['name'], store[2]['price'], store[2]['product'])
+    elif y == "3":
+        print(store[3]['name'], store[3]['price'], store[3]['product'])
+    elif y == "4":
+        print(store[4]['name'], store[4]['price'], store[4]['product']) """
+
+
+
+
+
+
 
 
 
