@@ -80,7 +80,7 @@ while True:
 
     def show_items(items):
         for index, item in enumerate(items):
-            print(index, ":", item["name"])
+            print(index, ":", item["name"], item["price"], item["product"])
     
     show_items(store)
 
@@ -102,11 +102,13 @@ while True:
     if y == "quit":
          break
 
-    if y == "shop":
+    if y == "cart":
          print(shopping_cart)
+         print("total so far $", float(total))
+         s = input("press enter to keep proceeding")
 
     if y == "0":
-        print(store[0]['name'], store[0]['price'], store[0]['product']) 
+        print(store[0]) 
         z = input("would you like to buy this item:")
         if z == "yes":
              shopping_cart.append(store[0]['name'])
@@ -119,12 +121,11 @@ while True:
              if y == "no":   
                 print("total cost: $",float(total), "have a great day") 
                 for items in shopping_cart:
-                    print(items)
+                    print(store[0]['name'], store[0]['price'])
                 break
 
-
     elif y == "1":
-        print(store[1]['name'], store[1]['price'], store[1]['product'])
+        print(store[1])
         z = input("would you like to buy this item:")
         if z == "yes":
              shopping_cart.append(store[1]['name'])
@@ -135,12 +136,13 @@ while True:
              x = 1
              y = input("would you like to continue?")
              if y == "no":
-                print("total cost: $",float(total), "have a great day")
-                print("your purchased itesm", shopping_cart)
+                print("total cost: $",float(total), "have a great day") 
+                for items in shopping_cart:
+                    print(store[1]['name'], store[1]['price'])
                 break
              
     elif y == "2":
-        print(store[2]['name'], store[2]['price'], store[2]['product'])
+        print(store[2])
         z = input("would you like to buy this item:")
         if z == "yes":
              shopping_cart.append(store[2]['name'])
@@ -151,12 +153,13 @@ while True:
              x = 2
              y = input("would you like to continue?")
              if y == "no":
-                print("total cost: $",float(total), "have a great day")
-                print("your purchased itesm", shopping_cart)
+                print("total cost: $",float(total), "have a great day") 
+                for items in shopping_cart:
+                    print(store[2]['name'], store[2]['price'])
                 break
 
     elif y == "3":
-        print(store[3]['name'], store[3]['price'], store[3]['product'])
+        print(store[3])
         z = input("would you like to buy this item:")
         if z == "yes":
              shopping_cart.append(store[3]['name'])
@@ -167,12 +170,13 @@ while True:
              x = 3
              y = input("would you like to continue?")
              if y == "no":
-                print("total cost: $",float(total), "have a great day")
-                print("your purchased itesm", shopping_cart)
+                print("total cost: $",float(total), "have a great day") 
+                for items in shopping_cart:
+                    print(store[3]['name'], store[3]['price'])
                 break
 
     elif y == "4":
-        print(store[4]['name'], store[4]['price'], store[4]['product'])
+        print(store[4])
         z = input("would you like to buy this item:")
         if z == "yes":
              shopping_cart.append(store[4]['name'])
@@ -183,8 +187,9 @@ while True:
              x = 4
              y = input("would you like to continue?")
              if y == "no":
-                print("total cost: $",float(total), "have a great day")
-                print("your purchased itesm", shopping_cart)
+                print("total cost: $",float(total), "have a great day") 
+                for items in shopping_cart:
+                    print(store[4]['name'], store[4]['price'])
                 break
 
 
