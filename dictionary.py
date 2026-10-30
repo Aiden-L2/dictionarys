@@ -172,7 +172,7 @@ while True:
              if y == "no":
                 print("total cost: $",float(total), "have a great day") 
                 for items in shopping_cart:
-                    print(store[3]['name'], store[3]['price'])
+                    print(store[3])
                 break
 
     elif y == "4":
@@ -189,7 +189,7 @@ while True:
              if y == "no":
                 print("total cost: $",float(total), "have a great day") 
                 for items in shopping_cart:
-                    print(store[4]['name'], store[4]['price'])
+                    print(store[4])
                 break
 
 
