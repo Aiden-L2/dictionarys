@@ -72,7 +72,7 @@ store = [
 shopping_cart = []
 total = 0
 x = 0
-
+z = 0
 
 while True:
 
@@ -89,15 +89,33 @@ while True:
         for items in shopping_cart:
             print("shopping cart:")
             print(store[x]['name'], store[x]['price'])
-            
-    z = input("Choose an item number 0-4 or 'cart' or 'quit' or 'check out':")
 
-    if z == y:
-        shopping_cart.append[y]
-        print("item added to cart")
+    def choose_item():
+        show_items(store)
+        y = int(input("Choose an item number 0-4 or 'cart' or 'quit' or 'check out':"))
+    print(store[y])
 
-    if z == "quit":
+
+    if y == "1":
+        print(store[1])
+        z = input("would you like to buy this item:")
+        if z == "yes":
+             shopping_cart.append(store[1]['name'])
+             print("item added to cart")
+             print(" ")
+             total += 5.50
+             x = 1
+
+
+    if y == "quit":
         break
+
+    if y == "cart":
+        print(shopping_cart)
+        g = input("enter to continue")
+
+
+
 
 
 
