@@ -93,7 +93,7 @@ while True:
     def choose_item():
         show_items(store)
         y = int(input("Choose an item number 0-4 or 'cart' or 'quit' or 'check out':"))
-    print(store[y])
+        print(store[y])
 
 
     if y == "1":
