@@ -82,7 +82,7 @@ while True:
         for index, item in enumerate(items):
             print(index, ":", item["name"], item["price"], item["product"])
     
-    show_items(store)
+
 
     y = shopping_cart
     if y == x:
@@ -94,18 +94,10 @@ while True:
         show_items(store)
         y = int(input("Choose an item number 0-4 or 'cart' or 'quit' or 'check out':"))
         print(store[y])
-
-
-    if y == "1":
-        print(store[1])
-        z = input("would you like to buy this item:")
-        if z == "yes":
-             shopping_cart.append(store[1]['name'])
-             print("item added to cart")
-             print(" ")
-             total += 5.50
-             x = 1
-
+        shopping_cart.append(store[y])
+        z = int(input("done shopping? yes or no"))
+        
+    choose_item()
 
     if y == "quit":
         break
@@ -113,6 +105,21 @@ while True:
     if y == "cart":
         print(shopping_cart)
         g = input("enter to continue")
+
+
+
+"""     if y == "1":
+        print(store[1])
+        z = input("would you like to buy this item:")
+        if z == "yes":
+             shopping_cart.append(store[1]['name'])
+             print("item added to cart")
+             print(" ")
+             total += 5.50
+             x = 1 """
+
+
+
 
 
 
