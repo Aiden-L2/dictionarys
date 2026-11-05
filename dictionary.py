@@ -96,7 +96,10 @@ while True:
         print(store[y])
         shopping_cart.append(store[y])
         z = int(input("done shopping? yes or no"))
-        
+        if z == "yes":
+            print(shopping_cart)
+            break
+
     choose_item()
 
     if y == "quit":
