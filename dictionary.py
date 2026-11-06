@@ -84,28 +84,50 @@ while True:
     
 
 
-    y = shopping_cart
-    if y == x:
-        for items in shopping_cart:
-            print("shopping cart:")
-            print(store[x]['name'], store[x]['price'])
+
 
     def choose_item():
         show_items(store)
-        y = int(input("Choose an item number 0-4 or 'cart' or 'quit' or 'check out':"))
+        y = int(input("Choose an item number 0-4:"))
+        print(" ")
         print(store[y])
         shopping_cart.append(store[y])
-        z = int(input("done shopping? yes or no"))
-        if z == "yes":
-            print(shopping_cart)
-            break
 
     choose_item()
 
-    if y == "quit":
+    print("If you're done shopping type 'yes'")
+    z = input("otherwise you can 'quit' or 'cart' or 'no:")
+    if z == "yes":
+        print(" ")
+        print(shopping_cart)
+        total += sum(items["price"] for items in shopping_cart)
+        if shopping_cart:
+            for items in shopping_cart:
+                print(items["name"], items["price"])
+                print(" ")
+            else:
+                print("broke empty cart")
+
+            z == input("chechout?????????")
+            if z == "yes":
+                print(" ")
+                print("recipt")
+                print(" ")
+                for items in shopping_cart:
+                    print(items["name"], items["price"])
+                    print(" ")
+                print("your total:", float(total))
+                break
+            else:
+                print(" ")
+
+    if z == "no":
+        total += sum(items["price"] for items in shopping_cart)
+
+    if z == "quit":
         break
 
-    if y == "cart":
+    if z == "cart":
         print(shopping_cart)
         g = input("enter to continue")
 
@@ -122,8 +144,12 @@ while True:
              x = 1 """
 
 
-
-
+""" 
+    y = shopping_cart
+    if y == x:
+        for items in shopping_cart:
+            print("shopping cart:")
+            print(store[x]['name'], store[x]['price']) """
 
 
 
