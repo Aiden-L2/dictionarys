@@ -78,6 +78,7 @@ def show_items(items):
     
 shopping_cart = []
 total = 0
+
 while True:
     def choose_item():
         show_items(store)
@@ -92,7 +93,7 @@ while True:
     y = input("otherwise you can 'quit' or 'cart' or 'no:")
     if y == "yes":
         print(" ")
-        total += sum(item["price"] for item in shopping_cart)
+        total = sum(item["price"] for item in shopping_cart)  
         print("shopping cart:")
         if shopping_cart:
             for item in shopping_cart:
