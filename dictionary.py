@@ -56,13 +56,13 @@ store = [
     "product": ": food"
 },
 {
-    "name": "Car_toy",
-    "price": 12.00,
+    "name": "SMALL LEGOS",
+    "price": 55.00,
     "product": ": toy"
 },
 {
-    "name": "Nerf_gun",
-    "price": 25.00,
+    "name": "BIG LEGOS",
+    "price": 125.00,
     "product": ": toy"
 },
 ]
